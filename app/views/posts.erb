@@ -1,0 +1,14 @@
+
+<% @posts.each do|post| %>
+  <p>Price: </p>
+  <%= post.price %>
+  <p>Description:</p>
+  <br>
+  <%= post.content %>
+  <br>
+<% end %>
+<p></p>
+
+<a href="/newpost/<%=@category%>">Create a post</a>
+
+

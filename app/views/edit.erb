@@ -1,0 +1,14 @@
+<form action="/edit/<%= @post.id %>" method="post" name="create">
+  <label for="content">Content</label>
+  <input type="text" name="content" value="<%= @post.content %>"><br>
+  <label for="price">Price</label>
+  <input type="text" name="price" value="<%= @post.price %>"><br>
+  <label for="email">Email</label>
+  <input type="text" name="email" value="<%= @post.email %>"><br>
+  <input type="submit" value="Edit post">
+</form>
+
+
+<form action="/delete/<%= @post.id %>" method="POST"> 
+  <input type="submit" value="DELETE_POST">
+</form>

@@ -1,0 +1,7 @@
+<ul>
+<% @categories.each do|cat| %>
+  <li><a class="pink" href="/posts/<%= cat.title %>"</a><%= cat.title %></li>
+<% end %>
+</ul>
+
+
